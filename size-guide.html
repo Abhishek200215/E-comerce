@@ -1,0 +1,1321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Size Guide - FashionFusion</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/animations.css">
+    <link rel="stylesheet" href="styles/responsive.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <a href="index.html" class="logo">Fashion<span>Fusion</span></a>
+                </div>
+                
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="about.html" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="shop.html" class="nav-link">Shop <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="shop.html?category=men">Men's Collection</a></li>
+                            <li><a href="shop.html?category=women">Women's Collection</a></li>
+                            <li><a href="shop.html?category=kids">Kids' Collection</a></li>
+                            <li><a href="shop.html?category=accessories">Accessories</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link">Contact</a>
+                    </li>
+                    <li class="nav-item auth-item">
+                        <a href="login.html" class="nav-link login-btn" id="loginBtn">
+                            <i class="fas fa-user"></i> Login
+                        </a>
+                        <div class="user-menu" id="userMenu">
+                            <a href="profile.html" class="user-menu-item">
+                                <i class="fas fa-user-edit"></i> My Profile
+                            </a>
+                            <a href="profile.html?tab=orders" class="user-menu-item">
+                                <i class="fas fa-shopping-bag"></i> My Orders
+                            </a>
+                            <a href="#" class="user-menu-item" id="logoutBtn">
+                                <i class="fas fa-sign-out-alt"></i> Logout
+                            </a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a href="cart.html" class="nav-link cart-icon">
+                            <i class="fas fa-shopping-cart"></i>
+                            <span class="cart-count">0</span>
+                        </a>
+                    </li>
+                </ul>
+
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Size Guide Header -->
+    <section class="page-header">
+        <div class="container">
+            <div class="page-header-content animate-fade-in">
+                <h1>Size Guide</h1>
+                <p>Find your perfect fit with our comprehensive sizing guide</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Size Guide Content -->
+    <section class="size-guide-content">
+        <div class="container">
+            <div class="size-guide-layout">
+                <!-- Navigation -->
+                <aside class="size-guide-sidebar">
+                    <nav class="size-guide-nav">
+                        <h3>Categories</h3>
+                        <ul>
+                            <li><a href="#women" class="nav-link active">Women's Sizes</a></li>
+                            <li><a href="#men" class="nav-link">Men's Sizes</a></li>
+                            <li><a href="#kids" class="nav-link">Kids' Sizes</a></li>
+                            <li><a href="#shoes" class="nav-link">Shoe Sizes</a></li>
+                            <li><a href="#accessories" class="nav-link">Accessories</a></li>
+                            <li><a href="#measure" class="nav-link">How to Measure</a></li>
+                            <li><a href="#conversion" class="nav-link">Size Conversion</a></li>
+                        </ul>
+                    </nav>
+
+                    <div class="measurement-tool">
+                        <h3>Measurement Guide</h3>
+                        <div class="tool-content">
+                            <p>Download our printable measurement guide for accurate sizing.</p>
+                            <a href="#" class="btn btn-outline">
+                                <i class="fas fa-download"></i> Download Guide
+                            </a>
+                        </div>
+                    </div>
+                </aside>
+
+                <!-- Main Content -->
+                <main class="size-guide-main">
+                    <!-- Women's Sizes -->
+                    <div class="size-section active" id="women">
+                        <h2>Women's Clothing Sizes</h2>
+                        
+                        <div class="size-tabs">
+                            <button class="size-tab-btn active" data-tab="women-dresses">Dresses & Tops</button>
+                            <button class="size-tab-btn" data-tab="women-bottoms">Bottoms</button>
+                            <button class="size-tab-btn" data-tab="women-intimate">Intimate Apparel</button>
+                        </div>
+
+                        <!-- Dresses & Tops -->
+                        <div class="size-tab-content active" id="women-dresses">
+                            <div class="size-table-container">
+                                <table class="size-table">
+                                    <thead>
+                                        <tr>
+                                            <th>US Size</th>
+                                            <th>Bust (inches)</th>
+                                            <th>Waist (inches)</th>
+                                            <th>Hips (inches)</th>
+                                            <th>Int'l Size</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>XS (0-2)</td>
+                                            <td>32"</td>
+                                            <td>25"</td>
+                                            <td>35"</td>
+                                            <td>XXS</td>
+                                        </tr>
+                                        <tr>
+                                            <td>S (4-6)</td>
+                                            <td>34"</td>
+                                            <td>27"</td>
+                                            <td>37"</td>
+                                            <td>XS</td>
+                                        </tr>
+                                        <tr>
+                                            <td>M (8-10)</td>
+                                            <td>36"</td>
+                                            <td>29"</td>
+                                            <td>39"</td>
+                                            <td>S</td>
+                                        </tr>
+                                        <tr>
+                                            <td>L (12-14)</td>
+                                            <td>38"</td>
+                                            <td>31"</td>
+                                            <td>41"</td>
+                                            <td>M</td>
+                                        </tr>
+                                        <tr>
+                                            <td>XL (16-18)</td>
+                                            <td>40"</td>
+                                            <td>33"</td>
+                                            <td>43"</td>
+                                            <td>L</td>
+                                        </tr>
+                                        <tr>
+                                            <td>XXL (20-22)</td>
+                                            <td>42"</td>
+                                            <td>35"</td>
+                                            <td>45"</td>
+                                            <td>XL</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                            <div class="fit-guide">
+                                <h3>Fit Guide - Dresses & Tops</h3>
+                                <div class="fit-options">
+                                    <div class="fit-option">
+                                        <h4>Regular Fit</h4>
+                                        <p>Standard cut with comfortable ease through bust, waist, and hips.</p>
+                                    </div>
+                                    <div class="fit-option">
+                                        <h4>Slim Fit</h4>
+                                        <p>Closer to body with minimal ease. Size up if between sizes.</p>
+                                    </div>
+                                    <div class="fit-option">
+                                        <h4>Relaxed Fit</h4>
+                                        <p>Generous cut with extra ease throughout. True to size.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Bottoms -->
+                        <div class="size-tab-content" id="women-bottoms">
+                            <div class="size-table-container">
+                                <table class="size-table">
+                                    <thead>
+                                        <tr>
+                                            <th>US Size</th>
+                                            <th>Waist (inches)</th>
+                                            <th>Hips (inches)</th>
+                                            <th>Inseam (inches)</th>
+                                            <th>Int'l Size</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>2</td>
+                                            <td>26"</td>
+                                            <td>36"</td>
+                                            <td>30"</td>
+                                            <td>XS</td>
+                                        </tr>
+                                        <tr>
+                                            <td>4</td>
+                                            <td>27"</td>
+                                            <td>37"</td>
+                                            <td>30"</td>
+                                            <td>S</td>
+                                        </tr>
+                                        <tr>
+                                            <td>6</td>
+                                            <td>28"</td>
+                                            <td>38"</td>
+                                            <td>30"</td>
+                                            <td>S</td>
+                                        </tr>
+                                        <tr>
+                                            <td>8</td>
+                                            <td>29"</td>
+                                            <td>39"</td>
+                                            <td>31"</td>
+                                            <td>M</td>
+                                        </tr>
+                                        <tr>
+                                            <td>10</td>
+                                            <td>30"</td>
+                                            <td>40"</td>
+                                            <td>31"</td>
+                                            <td>M</td>
+                                        </tr>
+                                        <tr>
+                                            <td>12</td>
+                                            <td>31"</td>
+                                            <td>41"</td>
+                                            <td>32"</td>
+                                            <td>L</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                            <div class="rise-options">
+                                <h3>Rise Options</h3>
+                                <div class="rise-cards">
+                                    <div class="rise-card">
+                                        <h4>High Rise</h4>
+                                        <p>Sits at natural waist</p>
+                                        <ul>
+                                            <li>10-11" front rise</li>
+                                            <li>14-15" back rise</li>
+                                            <li>Full coverage</li>
+                                        </ul>
+                                    </div>
+                                    <div class="rise-card">
+                                        <h4>Mid Rise</h4>
+                                        <p>Sits below natural waist</p>
+                                        <ul>
+                                            <li>8-9" front rise</li>
+                                            <li>12-13" back rise</li>
+                                            <li>Standard fit</li>
+                                        </ul>
+                                    </div>
+                                    <div class="rise-card">
+                                        <h4>Low Rise</h4>
+                                        <p>Sits on hips</p>
+                                        <ul>
+                                            <li>6-7" front rise</li>
+                                            <li>10-11" back rise</li>
+                                            <li>Modern fit</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Intimate Apparel -->
+                        <div class="size-tab-content" id="women-intimate">
+                            <div class="bra-size-guide">
+                                <h3>Bra Size Guide</h3>
+                                <div class="bra-measurement">
+                                    <div class="measure-step">
+                                        <h4>Step 1: Band Size</h4>
+                                        <p>Measure snugly around your rib cage, directly under your bust.</p>
+                                    </div>
+                                    <div class="measure-step">
+                                        <h4>Step 2: Bust Size</h4>
+                                        <p>Measure around the fullest part of your bust.</p>
+                                    </div>
+                                    <div class="measure-step">
+                                        <h4>Step 3: Calculate Cup Size</h4>
+                                        <p>Subtract band size from bust size to find cup size.</p>
+                                    </div>
+                                </div>
+
+                                <div class="bra-size-table">
+                                    <table class="size-table">
+                                        <thead>
+                                            <tr>
+                                                <th>Band Size</th>
+                                                <th>Underbust (inches)</th>
+                                                <th>A Cup</th>
+                                                <th>B Cup</th>
+                                                <th>C Cup</th>
+                                                <th>D Cup</th>
+                                                <th>DD/E Cup</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>32</td>
+                                                <td>27-28"</td>
+                                                <td>33"</td>
+                                                <td>34"</td>
+                                                <td>35"</td>
+                                                <td>36"</td>
+                                                <td>37"</td>
+                                            </tr>
+                                            <tr>
+                                                <td>34</td>
+                                                <td>29-30"</td>
+                                                <td>35"</td>
+                                                <td>36"</td>
+                                                <td>37"</td>
+                                                <td>38"</td>
+                                                <td>39"</td>
+                                            </tr>
+                                            <tr>
+                                                <td>36</td>
+                                                <td>31-32"</td>
+                                                <td>37"</td>
+                                                <td>38"</td>
+                                                <td>39"</td>
+                                                <td>40"</td>
+                                                <td>41"</td>
+                                            </tr>
+                                            <tr>
+                                                <td>38</td>
+                                                <td>33-34"</td>
+                                                <td>39"</td>
+                                                <td>40"</td>
+                                                <td>41"</td>
+                                                <td>42"</td>
+                                                <td>43"</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Men's Sizes -->
+                    <div class="size-section" id="men">
+                        <h2>Men's Clothing Sizes</h2>
+                        
+                        <div class="size-tabs">
+                            <button class="size-tab-btn active" data-tab="men-tops">Shirts & Tops</button>
+                            <button class="size-tab-btn" data-tab="men-bottoms">Bottoms</button>
+                            <button class="size-tab-btn" data-tab="men-suits">Suits & Blazers</button>
+                        </div>
+
+                        <!-- Shirts & Tops -->
+                        <div class="size-tab-content active" id="men-tops">
+                            <div class="size-table-container">
+                                <table class="size-table">
+                                    <thead>
+                                        <tr>
+                                            <th>US Size</th>
+                                            <th>Chest (inches)</th>
+                                            <th>Waist (inches)</th>
+                                            <th>Neck (inches)</th>
+                                            <th>Sleeve</th>
+                                            <th>Int'l Size</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>S</td>
+                                            <td>34-36"</td>
+                                            <td>28-30"</td>
+                                            <td>14-14.5"</td>
+                                            <td>32-33"</td>
+                                            <td>S</td>
+                                        </tr>
+                                        <tr>
+                                            <td>M</td>
+                                            <td>38-40"</td>
+                                            <td>32-34"</td>
+                                            <td>15-15.5"</td>
+                                            <td>33-34"</td>
+                                            <td>M</td>
+                                        </tr>
+                                        <tr>
+                                            <td>L</td>
+                                            <td>42-44"</td>
+                                            <td>36-38"</td>
+                                            <td>16-16.5"</td>
+                                            <td>34-35"</td>
+                                            <td>L</td>
+                                        </tr>
+                                        <tr>
+                                            <td>XL</td>
+                                            <td>46-48"</td>
+                                            <td>40-42"</td>
+                                            <td>17-17.5"</td>
+                                            <td>35-36"</td>
+                                            <td>XL</td>
+                                        </tr>
+                                        <tr>
+                                            <td>XXL</td>
+                                            <td>50-52"</td>
+                                            <td>44-46"</td>
+                                            <td>18-18.5"</td>
+                                            <td>36-37"</td>
+                                            <td>XXL</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                            <div class="shirt-fit-guide">
+                                <h3>Shirt Fit Guide</h3>
+                                <div class="fit-cards">
+                                    <div class="fit-card">
+                                        <h4>Slim Fit</h4>
+                                        <p>Close to body with tapered waist</p>
+                                        <ul>
+                                            <li>Narrow shoulders</li>
+                                            <li>Tapered torso</li>
+                                            <li>Fitted sleeves</li>
+                                        </ul>
+                                    </div>
+                                    <div class="fit-card">
+                                        <h4>Regular Fit</h4>
+                                        <p>Classic cut with comfortable ease</p>
+                                        <ul>
+                                            <li>Standard shoulders</li>
+                                            <li>Straight torso</li>
+                                            <li>Comfortable sleeves</li>
+                                        </ul>
+                                    </div>
+                                    <div class="fit-card">
+                                        <h4>Relaxed Fit</h4>
+                                        <p>Generous cut with extra room</p>
+                                        <ul>
+                                            <li>Wide shoulders</li>
+                                            <li>Full torso</li>
+                                            <li>Roomy sleeves</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Men's Bottoms -->
+                        <div class="size-tab-content" id="men-bottoms">
+                            <div class="size-table-container">
+                                <table class="size-table">
+                                    <thead>
+                                        <tr>
+                                            <th>Waist Size</th>
+                                            <th>US Size</th>
+                                            <th>Inseam</th>
+                                            <th>Fit</th>
+                                            <th>Int'l Size</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>28-30"</td>
+                                            <td>30</td>
+                                            <td>30", 32", 34"</td>
+                                            <td>Slim, Regular, Relaxed</td>
+                                            <td>46</td>
+                                        </tr>
+                                        <tr>
+                                            <td>31-33"</td>
+                                            <td>32</td>
+                                            <td>30", 32", 34"</td>
+                                            <td>Slim, Regular, Relaxed</td>
+                                            <td>48</td>
+                                        </tr>
+                                        <tr>
+                                            <td>34-36"</td>
+                                            <td>34</td>
+                                            <td>30", 32", 34"</td>
+                                            <td>Slim, Regular, Relaxed</td>
+                                            <td>50</td>
+                                        </tr>
+                                        <tr>
+                                            <td>37-39"</td>
+                                            <td>36</td>
+                                            <td>30", 32", 34"</td>
+                                            <td>Regular, Relaxed</td>
+                                            <td>52</td>
+                                        </tr>
+                                        <tr>
+                                            <td>40-42"</td>
+                                            <td>38</td>
+                                            <td>30", 32", 34"</td>
+                                            <td>Regular, Relaxed</td>
+                                            <td>54</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+
+                        <!-- Suits & Blazers -->
+                        <div class="size-tab-content" id="men-suits">
+                            <div class="suit-size-guide">
+                                <h3>Suits & Blazers Size Guide</h3>
+                                <div class="suit-table-container">
+                                    <table class="size-table">
+                                        <thead>
+                                            <tr>
+                                                <th>US Size</th>
+                                                <th>Chest (inches)</th>
+                                                <th>Waist (inches)</th>
+                                                <th>Jacket Length</th>
+                                                <th>Sleeve Length</th>
+                                                <th>Int'l Size</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>36S</td>
+                                                <td>36"</td>
+                                                <td>30"</td>
+                                                <td>Short</td>
+                                                <td>31"</td>
+                                                <td>46</td>
+                                            </tr>
+                                            <tr>
+                                                <td>38R</td>
+                                                <td>38"</td>
+                                                <td>32"</td>
+                                                <td>Regular</td>
+                                                <td>33"</td>
+                                                <td>48</td>
+                                            </tr>
+                                            <tr>
+                                                <td>40L</td>
+                                                <td>40"</td>
+                                                <td>34"</td>
+                                                <td>Long</td>
+                                                <td>35"</td>
+                                                <td>50</td>
+                                            </tr>
+                                            <tr>
+                                                <td>42R</td>
+                                                <td>42"</td>
+                                                <td>36"</td>
+                                                <td>Regular</td>
+                                                <td>34"</td>
+                                                <td>52</td>
+                                            </tr>
+                                            <tr>
+                                                <td>44L</td>
+                                                <td>44"</td>
+                                                <td>38"</td>
+                                                <td>Long</td>
+                                                <td>36"</td>
+                                                <td>54</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Kids' Sizes -->
+                    <div class="size-section" id="kids">
+                        <h2>Kids' Clothing Sizes</h2>
+                        
+                        <div class="size-tabs">
+                            <button class="size-tab-btn active" data-tab="kids-girls">Girls</button>
+                            <button class="size-tab-btn" data-tab="kids-boys">Boys</button>
+                            <button class="size-tab-btn" data-tab="kids-baby">Baby</button>
+                        </div>
+
+                        <!-- Girls -->
+                        <div class="size-tab-content active" id="kids-girls">
+                            <div class="kids-size-guide">
+                                <h3>Girls' Size Chart (Ages 2-14)</h3>
+                                <div class="size-table-container">
+                                    <table class="size-table">
+                                        <thead>
+                                            <tr>
+                                                <th>US Size</th>
+                                                <th>Age</th>
+                                                <th>Height</th>
+                                                <th>Weight</th>
+                                                <th>Chest</th>
+                                                <th>Waist</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>2T</td>
+                                                <td>2 years</td>
+                                                <td>33-35"</td>
+                                                <td>28-30 lbs</td>
+                                                <td>20"</td>
+                                                <td>19"</td>
+                                            </tr>
+                                            <tr>
+                                                <td>3T</td>
+                                                <td>3 years</td>
+                                                <td>35-38"</td>
+                                                <td>30-34 lbs</td>
+                                                <td>21"</td>
+                                                <td>20"</td>
+                                            </tr>
+                                            <tr>
+                                                <td>4</td>
+                                                <td>4 years</td>
+                                                <td>38-41"</td>
+                                                <td>34-38 lbs</td>
+                                                <td>22"</td>
+                                                <td>21"</td>
+                                            </tr>
+                                            <tr>
+                                                <td>5</td>
+                                                <td>5 years</td>
+                                                <td>41-44"</td>
+                                                <td>38-42 lbs</td>
+                                                <td>23"</td>
+                                                <td>22"</td>
+                                            </tr>
+                                            <tr>
+                                                <td>6</td>
+                                                <td>6 years</td>
+                                                <td>44-47"</td>
+                                                <td>42-48 lbs</td>
+                                                <td>24"</td>
+                                                <td>23"</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Boys -->
+                        <div class="size-tab-content" id="kids-boys">
+                            <div class="kids-size-guide">
+                                <h3>Boys' Size Chart (Ages 2-14)</h3>
+                                <div class="size-table-container">
+                                    <table class="size-table">
+                                        <thead>
+                                            <tr>
+                                                <th>US Size</th>
+                                                <th>Age</th>
+                                                <th>Height</th>
+                                                <th>Weight</th>
+                                                <th>Chest</th>
+                                                <th>Waist</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>2T</td>
+                                                <td>2 years</td>
+                                                <td>33-35"</td>
+                                                <td>28-30 lbs</td>
+                                                <td>20"</td>
+                                                <td>20"</td>
+                                            </tr>
+                                            <tr>
+                                                <td>3T</td>
+                                                <td>3 years</td>
+                                                <td>35-38"</td>
+                                                <td>30-34 lbs</td>
+                                                <td>21"</td>
+                                                <td>21"</td>
+                                            </tr>
+                                            <tr>
+                                                <td>4</td>
+                                                <td>4 years</td>
+                                                <td>38-41"</td>
+                                                <td>34-38 lbs</td>
+                                                <td>22"</td>
+                                                <td>22"</td>
+                                            </tr>
+                                            <tr>
+                                                <td>5</td>
+                                                <td>5 years</td>
+                                                <td>41-44"</td>
+                                                <td>38-42 lbs</td>
+                                                <td>23"</td>
+                                                <td>23"</td>
+                                            </tr>
+                                            <tr>
+                                                <td>6</td>
+                                                <td>6 years</td>
+                                                <td>44-47"</td>
+                                                <td>42-48 lbs</td>
+                                                <td>24"</td>
+                                                <td>24"</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Baby -->
+                        <div class="size-tab-content" id="kids-baby">
+                            <div class="baby-size-guide">
+                                <h3>Baby Size Chart (Newborn-24 Months)</h3>
+                                <div class="size-table-container">
+                                    <table class="size-table">
+                                        <thead>
+                                            <tr>
+                                                <th>Size</th>
+                                                <th>Age</th>
+                                                <th>Weight</th>
+                                                <th>Height</th>
+                                                <th>Chest</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>Newborn</td>
+                                                <td>0-3 mos</td>
+                                                <td>6-9 lbs</td>
+                                                <td>19-21"</td>
+                                                <td>14"</td>
+                                            </tr>
+                                            <tr>
+                                                <td>3 Months</td>
+                                                <td>3-6 mos</td>
+                                                <td>9-12 lbs</td>
+                                                <td>21-24"</td>
+                                                <td>15"</td>
+                                            </tr>
+                                            <tr>
+                                                <td>6 Months</td>
+                                                <td>6-9 mos</td>
+                                                <td>12-16 lbs</td>
+                                                <td>24-27"</td>
+                                                <td>16"</td>
+                                            </tr>
+                                            <tr>
+                                                <td>12 Months</td>
+                                                <td>9-12 mos</td>
+                                                <td>16-20 lbs</td>
+                                                <td>27-29"</td>
+                                                <td>17"</td>
+                                            </tr>
+                                            <tr>
+                                                <td>18 Months</td>
+                                                <td>12-18 mos</td>
+                                                <td>20-24 lbs</td>
+                                                <td>29-31"</td>
+                                                <td>18"</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Shoe Sizes -->
+                    <div class="size-section" id="shoes">
+                        <h2>Shoe Size Guide</h2>
+                        
+                        <div class="size-tabs">
+                            <button class="size-tab-btn active" data-tab="shoes-women">Women's Shoes</button>
+                            <button class="size-tab-btn" data-tab="shoes-men">Men's Shoes</button>
+                            <button class="size-tab-btn" data-tab="shoes-kids">Kids' Shoes</button>
+                        </div>
+
+                        <!-- Women's Shoes -->
+                        <div class="size-tab-content active" id="shoes-women">
+                            <div class="shoe-size-guide">
+                                <h3>Women's Shoe Size Conversion</h3>
+                                <div class="size-table-container">
+                                    <table class="size-table">
+                                        <thead>
+                                            <tr>
+                                                <th>US</th>
+                                                <th>UK</th>
+                                                <th>EU</th>
+                                                <th>Foot Length (inches)</th>
+                                                <th>Foot Length (cm)</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>5</td>
+                                                <td>3</td>
+                                                <td>35</td>
+                                                <td>8.5"</td>
+                                                <td>21.6 cm</td>
+                                            </tr>
+                                            <tr>
+                                                <td>6</td>
+                                                <td>4</td>
+                                                <td>36</td>
+                                                <td>8.75"</td>
+                                                <td>22.2 cm</td>
+                                            </tr>
+                                            <tr>
+                                                <td>7</td>
+                                                <td>5</td>
+                                                <td>37</td>
+                                                <td>9.125"</td>
+                                                <td>23.2 cm</td>
+                                            </tr>
+                                            <tr>
+                                                <td>8</td>
+                                                <td>6</td>
+                                                <td>38</td>
+                                                <td>9.5"</td>
+                                                <td>24.1 cm</td>
+                                            </tr>
+                                            <tr>
+                                                <td>9</td>
+                                                <td>7</td>
+                                                <td>39</td>
+                                                <td>9.875"</td>
+                                                <td>25.1 cm</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Men's Shoes -->
+                        <div class="size-tab-content" id="shoes-men">
+                            <div class="shoe-size-guide">
+                                <h3>Men's Shoe Size Conversion</h3>
+                                <div class="size-table-container">
+                                    <table class="size-table">
+                                        <thead>
+                                            <tr>
+                                                <th>US</th>
+                                                <th>UK</th>
+                                                <th>EU</th>
+                                                <th>Foot Length (inches)</th>
+                                                <th>Foot Length (cm)</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>7</td>
+                                                <td>6</td>
+                                                <td>40</td>
+                                                <td>9.625"</td>
+                                                <td>24.4 cm</td>
+                                            </tr>
+                                            <tr>
+                                                <td>8</td>
+                                                <td>7</td>
+                                                <td>41</td>
+                                                <td>9.9375"</td>
+                                                <td>25.2 cm</td>
+                                            </tr>
+                                            <tr>
+                                                <td>9</td>
+                                                <td>8</td>
+                                                <td>42</td>
+                                                <td>10.25"</td>
+                                                <td>26.0 cm</td>
+                                            </tr>
+                                            <tr>
+                                                <td>10</td>
+                                                <td>9</td>
+                                                <td>43</td>
+                                                <td>10.5625"</td>
+                                                <td>26.8 cm</td>
+                                            </tr>
+                                            <tr>
+                                                <td>11</td>
+                                                <td>10</td>
+                                                <td>44</td>
+                                                <td>10.9375"</td>
+                                                <td>27.8 cm</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Kids' Shoes -->
+                        <div class="size-tab-content" id="shoes-kids">
+                            <div class="shoe-size-guide">
+                                <h3>Kids' Shoe Size Conversion</h3>
+                                <div class="size-table-container">
+                                    <table class="size-table">
+                                        <thead>
+                                            <tr>
+                                                <th>US Kids</th>
+                                                <th>EU</th>
+                                                <th>UK</th>
+                                                <th>Foot Length (inches)</th>
+                                                <th>Foot Length (cm)</th>
+                                                <th>Approx. Age</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>10C</td>
+                                                <td>27</td>
+                                                <td>9</td>
+                                                <td>6.25"</td>
+                                                <td>15.9 cm</td>
+                                                <td>12-18 mos</td>
+                                            </tr>
+                                            <tr>
+                                                <td>11C</td>
+                                                <td>28</td>
+                                                <td>10</td>
+                                                <td>6.5"</td>
+                                                <td>16.5 cm</td>
+                                                <td>18-24 mos</td>
+                                            </tr>
+                                            <tr>
+                                                <td>12C</td>
+                                                <td>29</td>
+                                                <td>11</td>
+                                                <td>6.75"</td>
+                                                <td>17.1 cm</td>
+                                                <td>2 years</td>
+                                            </tr>
+                                            <tr>
+                                                <td>13C</td>
+                                                <td>30</td>
+                                                <td>12</td>
+                                                <td>7"</td>
+                                                <td>17.8 cm</td>
+                                                <td>2-3 years</td>
+                                            </tr>
+                                            <tr>
+                                                <td>1Y</td>
+                                                <td>32</td>
+                                                <td>13</td>
+                                                <td>7.25"</td>
+                                                <td>18.4 cm</td>
+                                                <td>3-4 years</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Accessories -->
+                    <div class="size-section" id="accessories">
+                        <h2>Accessories Sizing</h2>
+                        
+                        <div class="accessories-guide">
+                            <div class="accessory-category">
+                                <h3>Rings</h3>
+                                <div class="ring-size-guide">
+                                    <div class="ring-chart">
+                                        <h4>Ring Size Chart</h4>
+                                        <table class="size-table">
+                                            <thead>
+                                                <tr>
+                                                    <th>US Size</th>
+                                                    <th>Circumference (mm)</th>
+                                                    <th>Diameter (mm)</th>
+                                                    <th>UK Size</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>4</td>
+                                                    <td>46.8 mm</td>
+                                                    <td>14.9 mm</td>
+                                                    <td>H</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>5</td>
+                                                    <td>49.3 mm</td>
+                                                    <td>15.7 mm</td>
+                                                    <td>I</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>6</td>
+                                                    <td>51.9 mm</td>
+                                                    <td>16.5 mm</td>
+                                                    <td>K</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>7</td>
+                                                    <td>54.4 mm</td>
+                                                    <td>17.3 mm</td>
+                                                    <td>M</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>8</td>
+                                                    <td>57.0 mm</td>
+                                                    <td>18.1 mm</td>
+                                                    <td>N</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accessory-category">
+                                <h3>Belts</h3>
+                                <div class="belt-size-guide">
+                                    <h4>Belt Size Guide</h4>
+                                    <p>To find your belt size, add 2 inches to your pant waist size.</p>
+                                    <div class="belt-table">
+                                        <table class="size-table">
+                                            <thead>
+                                                <tr>
+                                                    <th>Pant Waist Size</th>
+                                                    <th>Belt Size</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>28"</td>
+                                                    <td>30"</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>30"</td>
+                                                    <td>32"</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>32"</td>
+                                                    <td>34"</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>34"</td>
+                                                    <td>36"</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>36"</td>
+                                                    <td>38"</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- How to Measure -->
+                    <div class="size-section" id="measure">
+                        <h2>How to Measure</h2>
+                        
+                        <div class="measurement-guide">
+                            <div class="measurement-steps">
+                                <div class="measure-step">
+                                    <div class="step-visual">
+                                        <i class="fas fa-ruler-combined"></i>
+                                    </div>
+                                    <div class="step-content">
+                                        <h3>What You'll Need</h3>
+                                        <ul>
+                                            <li>Soft measuring tape</li>
+                                            <li>Well-fitting undergarments</li>
+                                            <li>Full-length mirror</li>
+                                            <li>Assistant (recommended)</li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div class="measure-step">
+                                    <div class="step-visual">
+                                        <i class="fas fa-tshirt"></i>
+                                    </div>
+                                    <div class="step-content">
+                                        <h3>Bust/Chest</h3>
+                                        <p>Measure around the fullest part of your bust/chest, keeping the tape level and snug but not tight.</p>
+                                    </div>
+                                </div>
+
+                                <div class="measure-step">
+                                    <div class="step-visual">
+                                        <i class="fas fa-waist"></i>
+                                    </div>
+                                    <div class="step-content">
+                                        <h3>Waist</h3>
+                                        <p>Measure around the narrowest part of your natural waist, usually about 1-2 inches above your navel.</p>
+                                    </div>
+                                </div>
+
+                                <div class="measure-step">
+                                    <div class="step-visual">
+                                        <i class="fas fa-hips"></i>
+                                    </div>
+                                    <div class="step-content">
+                                        <h3>Hips</h3>
+                                        <p>Measure around the fullest part of your hips, about 7-8 inches below your waist.</p>
+                                    </div>
+                                </div>
+
+                                <div class="measure-step">
+                                    <div class="step-visual">
+                                        <i class="fas fa-ruler-vertical"></i>
+                                    </div>
+                                    <div class="step-content">
+                                        <h3>Inseam</h3>
+                                        <p>Measure from the crotch seam to the bottom of the ankle along the inside of your leg.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Size Conversion -->
+                    <div class="size-section" id="conversion">
+                        <h2>International Size Conversion</h2>
+                        
+                        <div class="conversion-guide">
+                            <div class="conversion-tables">
+                                <div class="conversion-table">
+                                    <h3>Women's Size Conversion</h3>
+                                    <table class="size-table">
+                                        <thead>
+                                            <tr>
+                                                <th>US</th>
+                                                <th>UK</th>
+                                                <th>EU</th>
+                                                <th>FR</th>
+                                                <th>IT</th>
+                                                <th>AU</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>2</td>
+                                                <td>6</td>
+                                                <td>32</td>
+                                                <td>34</td>
+                                                <td>38</td>
+                                                <td>6</td>
+                                            </tr>
+                                            <tr>
+                                                <td>4</td>
+                                                <td>8</td>
+                                                <td>34</td>
+                                                <td>36</td>
+                                                <td>40</td>
+                                                <td>8</td>
+                                            </tr>
+                                            <tr>
+                                                <td>6</td>
+                                                <td>10</td>
+                                                <td>36</td>
+                                                <td>38</td>
+                                                <td>42</td>
+                                                <td>10</td>
+                                            </tr>
+                                            <tr>
+                                                <td>8</td>
+                                                <td>12</td>
+                                                <td>38</td>
+                                                <td>40</td>
+                                                <td>44</td>
+                                                <td>12</td>
+                                            </tr>
+                                            <tr>
+                                                <td>10</td>
+                                                <td>14</td>
+                                                <td>40</td>
+                                                <td>42</td>
+                                                <td>46</td>
+                                                <td>14</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+
+                                <div class="conversion-table">
+                                    <h3>Men's Size Conversion</h3>
+                                    <table class="size-table">
+                                        <thead>
+                                            <tr>
+                                                <th>US</th>
+                                                <th>UK</th>
+                                                <th>EU</th>
+                                                <th>FR</th>
+                                                <th>IT</th>
+                                                <th>AU</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>S</td>
+                                                <td>S</td>
+                                                <td>46</td>
+                                                <td>44</td>
+                                                <td>46</td>
+                                                <td>S</td>
+                                            </tr>
+                                            <tr>
+                                                <td>M</td>
+                                                <td>M</td>
+                                                <td>48</td>
+                                                <td>46</td>
+                                                <td>48</td>
+                                                <td>M</td>
+                                            </tr>
+                                            <tr>
+                                                <td>L</td>
+                                                <td>L</td>
+                                                <td>50</td>
+                                                <td>48</td>
+                                                <td>50</td>
+                                                <td>L</td>
+                                            </tr>
+                                            <tr>
+                                                <td>XL</td>
+                                                <td>XL</td>
+                                                <td>52</td>
+                                                <td>50</td>
+                                                <td>52</td>
+                                                <td>XL</td>
+                                            </tr>
+                                            <tr>
+                                                <td>XXL</td>
+                                                <td>XXL</td>
+                                                <td>54</td>
+                                                <td>52</td>
+                                                <td>54</td>
+                                                <td>XXL</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </main>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <a href="index.html" class="logo">Fashion<span>Fusion</span></a>
+                    </div>
+                    <p>Your premier destination for trendy and affordable fashion. Quality meets style in every piece we offer.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="shop.html">Shop</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Customer Service</h3>
+                    <ul>
+                        <li><a href="shipping.html">Shipping Policy</a></li>
+                        <li><a href="returns.html">Returns & Refunds</a></li>
+                        <li><a href="size-guide.html" class="active">Size Guide</a></li>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <div class="contact-info">
+                        <p><i class="fas fa-map-marker-alt"></i> 123 Fashion St, Style City</p>
+                        <p><i class="fas fa-phone"></i> +1 (555) 123-4567</p>
+                        <p><i class="fas fa-envelope"></i> info@fashionfusion.com</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 FashionFusion. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script src="js/size-guide.js"></script>
+    <script src="js/policy.js"></script>
+</body>
+</html>

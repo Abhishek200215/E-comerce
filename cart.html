@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart - FashionFusion</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/animations.css">
+    <link rel="stylesheet" href="styles/responsive.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <a href="index.html" class="logo">Fashion<span>Fusion</span></a>
+                </div>
+                
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="about.html" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="shop.html" class="nav-link">Shop <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="shop.html?category=men">Men's Collection</a></li>
+                            <li><a href="shop.html?category=women">Women's Collection</a></li>
+                            <li><a href="shop.html?category=kids">Kids' Collection</a></li>
+                            <li><a href="shop.html?category=accessories">Accessories</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link">Contact</a>
+                    </li>
+                    <li class="nav-item auth-item">
+                        <a href="login.html" class="nav-link login-btn" id="loginBtn">
+                            <i class="fas fa-user"></i> Login
+                        </a>
+                        <div class="user-menu" id="userMenu">
+                            <a href="profile.html" class="user-menu-item">
+                                <i class="fas fa-user-edit"></i> My Profile
+                            </a>
+                            <a href="profile.html?tab=orders" class="user-menu-item">
+                                <i class="fas fa-shopping-bag"></i> My Orders
+                            </a>
+                            <a href="#" class="user-menu-item" id="logoutBtn">
+                                <i class="fas fa-sign-out-alt"></i> Logout
+                            </a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a href="cart.html" class="nav-link cart-icon active">
+                            <i class="fas fa-shopping-cart"></i>
+                            <span class="cart-count">0</span>
+                        </a>
+                    </li>
+                </ul>
+
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Cart Header -->
+    <section class="page-header">
+        <div class="container">
+            <div class="page-header-content animate-fade-in">
+                <h1>Shopping Cart</h1>
+                <p>Review your items and proceed to checkout</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cart Content -->
+    <section class="cart-content">
+        <div class="container">
+            <div class="cart-layout">
+                <!-- Cart Items -->
+                <div class="cart-items">
+                    <div class="cart-header">
+                        <h2>Your Items (<span id="cartItemsCount">0</span>)</h2>
+                        <button class="btn btn-text" onclick="cartManager.clearCart()">
+                            <i class="fas fa-trash"></i> Clear Cart
+                        </button>
+                    </div>
+                    
+                    <div class="cart-items-list" id="cartItemsList">
+                        <!-- Cart items will be loaded dynamically -->
+                        <div class="empty-cart">
+                            <i class="fas fa-shopping-cart"></i>
+                            <h3>Your cart is empty</h3>
+                            <p>Add some items to get started</p>
+                            <a href="shop.html" class="btn btn-primary">Continue Shopping</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Cart Summary -->
+                <aside class="cart-summary">
+                    <div class="summary-card">
+                        <h3>Order Summary</h3>
+                        
+                        <div class="summary-row">
+                            <span>Subtotal</span>
+                            <span id="subtotal">$0.00</span>
+                        </div>
+                        
+                        <div class="summary-row">
+                            <span>Shipping</span>
+                            <span id="shipping">$0.00</span>
+                        </div>
+                        
+                        <div class="summary-row">
+                            <span>Tax</span>
+                            <span id="tax">$0.00</span>
+                        </div>
+                        
+                        <div class="summary-row discount-row">
+                            <span>Discount</span>
+                            <span id="discount">-$0.00</span>
+                        </div>
+                        
+                        <div class="summary-divider"></div>
+                        
+                        <div class="summary-row total-row">
+                            <strong>Total</strong>
+                            <strong id="total">$0.00</strong>
+                        </div>
+
+                        <div class="promo-code">
+                            <label for="promoCode">Promo Code</label>
+                            <div class="promo-input">
+                                <input type="text" id="promoCode" placeholder="Enter code">
+                                <button class="btn btn-outline" onclick="cartManager.applyPromoCode()">Apply</button>
+                            </div>
+                            <div class="promo-message" id="promoMessage"></div>
+                        </div>
+
+                        <button class="btn btn-primary checkout-btn" id="checkoutBtn" disabled>
+                            Proceed to Checkout
+                        </button>
+                        
+                        <div class="secure-checkout">
+                            <i class="fas fa-lock"></i>
+                            <span>Secure checkout guaranteed</span>
+                        </div>
+
+                        <div class="payment-methods">
+                            <h4>We Accept</h4>
+                            <div class="payment-icons">
+                                <i class="fab fa-cc-visa"></i>
+                                <i class="fab fa-cc-mastercard"></i>
+                                <i class="fab fa-cc-amex"></i>
+                                <i class="fab fa-cc-paypal"></i>
+                                <i class="fab fa-cc-apple-pay"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="shipping-info">
+                        <h4>Shipping Information</h4>
+                        <p><i class="fas fa-shipping-fast"></i> Free shipping on orders over $50</p>
+                        <p><i class="fas fa-undo-alt"></i> Free returns within 30 days</p>
+                        <p><i class="fas fa-shield-alt"></i> Secure payment processing</p>
+                    </div>
+                </aside>
+            </div>
+
+            <!-- Recently Viewed -->
+            <div class="recently-viewed">
+                <div class="section-header">
+                    <h2>You Might Also Like</h2>
+                    <p>Based on your shopping cart</p>
+                </div>
+                <div class="products-grid" id="suggestedProducts">
+                    <!-- Suggested products will be loaded dynamically -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <a href="index.html" class="logo">Fashion<span>Fusion</span></a>
+                    </div>
+                    <p>Your premier destination for trendy and affordable fashion. Quality meets style in every piece we offer.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="shop.html">Shop</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Customer Service</h3>
+                    <ul>
+                        <li><a href="shipping.html">Shipping Policy</a></li>
+                        <li><a href="returns.html">Returns & Refunds</a></li>
+                        <li><a href="size-guide.html">Size Guide</a></li>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <div class="contact-info">
+                        <p><i class="fas fa-map-marker-alt"></i> 123 Fashion St, Style City</p>
+                        <p><i class="fas fa-phone"></i> +1 (555) 123-4567</p>
+                        <p><i class="fas fa-envelope"></i> info@fashionfusion.com</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 FashionFusion. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script src="js/cart.js"></script>
+</body>
+</html>

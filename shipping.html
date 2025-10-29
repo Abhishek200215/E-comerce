@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shipping Policy - FashionFusion</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/animations.css">
+    <link rel="stylesheet" href="styles/responsive.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <a href="index.html" class="logo">Fashion<span>Fusion</span></a>
+                </div>
+                
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="about.html" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="shop.html" class="nav-link">Shop <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="shop.html?category=men">Men's Collection</a></li>
+                            <li><a href="shop.html?category=women">Women's Collection</a></li>
+                            <li><a href="shop.html?category=kids">Kids' Collection</a></li>
+                            <li><a href="shop.html?category=accessories">Accessories</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link">Contact</a>
+                    </li>
+                    <li class="nav-item auth-item">
+                        <a href="login.html" class="nav-link login-btn" id="loginBtn">
+                            <i class="fas fa-user"></i> Login
+                        </a>
+                        <div class="user-menu" id="userMenu">
+                            <a href="profile.html" class="user-menu-item">
+                                <i class="fas fa-user-edit"></i> My Profile
+                            </a>
+                            <a href="profile.html?tab=orders" class="user-menu-item">
+                                <i class="fas fa-shopping-bag"></i> My Orders
+                            </a>
+                            <a href="#" class="user-menu-item" id="logoutBtn">
+                                <i class="fas fa-sign-out-alt"></i> Logout
+                            </a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a href="cart.html" class="nav-link cart-icon">
+                            <i class="fas fa-shopping-cart"></i>
+                            <span class="cart-count">0</span>
+                        </a>
+                    </li>
+                </ul>
+
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Shipping Header -->
+    <section class="page-header">
+        <div class="container">
+            <div class="page-header-content animate-fade-in">
+                <h1>Shipping Policy</h1>
+                <p>Fast, reliable delivery to your doorstep</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Shipping Content -->
+    <section class="policy-content">
+        <div class="container">
+            <div class="policy-layout">
+                <!-- Table of Contents -->
+                <aside class="policy-sidebar">
+                    <nav class="policy-nav">
+                        <h3>Quick Navigation</h3>
+                        <ul>
+                            <li><a href="#domestic" class="nav-link active">Domestic Shipping</a></li>
+                            <li><a href="#international" class="nav-link">International Shipping</a></li>
+                            <li><a href="#processing" class="nav-link">Order Processing</a></li>
+                            <li><a href="#delivery" class="nav-link">Delivery Times</a></li>
+                            <li><a href="#tracking" class="nav-link">Order Tracking</a></li>
+                            <li><a href="#costs" class="nav-link">Shipping Costs</a></li>
+                            <li><a href="#restrictions" class="nav-link">Shipping Restrictions</a></li>
+                            <li><a href="#issues" class="nav-link">Delivery Issues</a></li>
+                        </ul>
+                    </nav>
+                </aside>
+
+                <!-- Main Content -->
+                <main class="policy-main">
+                    <div class="policy-section active" id="domestic">
+                        <h2>Domestic Shipping</h2>
+                        <p>We offer fast and reliable shipping throughout the United States with multiple delivery options to suit your needs.</p>
+                        
+                        <div class="shipping-methods">
+                            <div class="shipping-method">
+                                <div class="method-icon">
+                                    <i class="fas fa-shipping-fast"></i>
+                                </div>
+                                <div class="method-content">
+                                    <h3>Standard Shipping</h3>
+                                    <p><strong>Delivery:</strong> 3-5 business days</p>
+                                    <p><strong>Cost:</strong> $5.99 or FREE on orders over $50</p>
+                                    <p>Perfect for regular orders with no rush delivery requirements.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="shipping-method">
+                                <div class="method-icon">
+                                    <i class="fas fa-rocket"></i>
+                                </div>
+                                <div class="method-content">
+                                    <h3>Express Shipping</h3>
+                                    <p><strong>Delivery:</strong> 1-2 business days</p>
+                                    <p><strong>Cost:</strong> $12.99</p>
+                                    <p>Ideal for when you need your items quickly. Orders must be placed before 2 PM EST for same-day processing.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="shipping-method">
+                                <div class="method-icon">
+                                    <i class="fas fa-gem"></i>
+                                </div>
+                                <div class="method-content">
+                                    <h3>Next Day Delivery</h3>
+                                    <p><strong>Delivery:</strong> Next business day</p>
+                                    <p><strong>Cost:</strong> $24.99</p>
+                                    <p>For urgent deliveries. Orders must be placed before 12 PM EST. Not available in all areas.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="policy-section" id="international">
+                        <h2>International Shipping</h2>
+                        <p>We ship to over 50 countries worldwide. International delivery times and costs vary by destination.</p>
+                        
+                        <div class="info-grid">
+                            <div class="info-card">
+                                <h3>North America</h3>
+                                <ul>
+                                    <li><strong>Canada:</strong> 5-7 business days - $14.99</li>
+                                    <li><strong>Mexico:</strong> 6-8 business days - $16.99</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="info-card">
+                                <h3>Europe</h3>
+                                <ul>
+                                    <li><strong>UK:</strong> 7-10 business days - $19.99</li>
+                                    <li><strong>EU Countries:</strong> 8-12 business days - $22.99</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="info-card">
+                                <h3>Asia & Pacific</h3>
+                                <ul>
+                                    <li><strong>Australia:</strong> 10-14 business days - $29.99</li>
+                                    <li><strong>Japan:</strong> 8-12 business days - $24.99</li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <div class="notice-box">
+                            <h4>Important Notes:</h4>
+                            <ul>
+                                <li>Customs duties and taxes are the responsibility of the recipient</li>
+                                <li>Delivery times are estimates and may vary</li>
+                                <li>Some restrictions apply to certain countries</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="policy-section" id="processing">
+                        <h2>Order Processing</h2>
+                        
+                        <div class="process-steps">
+                            <div class="process-step">
+                                <div class="step-number">1</div>
+                                <div class="step-content">
+                                    <h3>Order Received</h3>
+                                    <p>We receive your order and begin processing immediately during business hours.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="process-step">
+                                <div class="step-number">2</div>
+                                <div class="step-content">
+                                    <h3>Processing & Verification</h3>
+                                    <p>Our team verifies your order details and processes payment. This typically takes 1-2 business days.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="process-step">
+                                <div class="step-number">3</div>
+                                <div class="step-content">
+                                    <h3>Order Preparation</h3>
+                                    <p>Items are carefully picked, quality-checked, and packaged for shipment.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="process-step">
+                                <div class="step-number">4</div>
+                                <div class="step-content">
+                                    <h3>Shipping & Tracking</h3>
+                                    <p>Your order is shipped and tracking information is sent to your email.</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="processing-times">
+                            <h3>Processing Times</h3>
+                            <table class="policy-table">
+                                <thead>
+                                    <tr>
+                                        <th>Order Type</th>
+                                        <th>Processing Time</th>
+                                        <th>Notes</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Regular Orders</td>
+                                        <td>1-2 business days</td>
+                                        <td>Most orders processed within 24 hours</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Custom Items</td>
+                                        <td>3-5 business days</td>
+                                        <td>Includes monogramming or special requests</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Holiday Periods</td>
+                                        <td>2-4 business days</td>
+                                        <td>During peak seasons (Nov-Dec)</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <div class="policy-section" id="delivery">
+                        <h2>Delivery Times & Areas</h2>
+                        
+                        <div class="delivery-map">
+                            <div class="map-legend">
+                                <h3>US Delivery Zones</h3>
+                                <div class="legend-item">
+                                    <span class="legend-color zone-1"></span>
+                                    <span>Zone 1: 1-3 days</span>
+                                </div>
+                                <div class="legend-item">
+                                    <span class="legend-color zone-2"></span>
+                                    <span>Zone 2: 3-5 days</span>
+                                </div>
+                                <div class="legend-item">
+                                    <span class="legend-color zone-3"></span>
+                                    <span>Zone 3: 5-7 days</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="delivery-schedule">
+                            <h3>Estimated Delivery Schedule</h3>
+                            <table class="policy-table">
+                                <thead>
+                                    <tr>
+                                        <th>Shipping Method</th>
+                                        <th>East Coast</th>
+                                        <th>West Coast</th>
+                                        <th>Central US</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Standard</td>
+                                        <td>2-3 days</td>
+                                        <td>4-5 days</td>
+                                        <td>3-4 days</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Express</td>
+                                        <td>1 day</td>
+                                        <td>2 days</td>
+                                        <td>1-2 days</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Next Day</td>
+                                        <td>Next day</td>
+                                        <td>Next day*</td>
+                                        <td>Next day</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <p class="table-note">* Next day delivery to West Coast requires order before 10 AM EST</p>
+                        </div>
+                    </div>
+
+                    <div class="policy-section" id="tracking">
+                        <h2>Order Tracking</h2>
+                        
+                        <div class="tracking-info">
+                            <div class="tracking-methods">
+                                <h3>How to Track Your Order</h3>
+                                
+                                <div class="method-card">
+                                    <div class="method-icon">
+                                        <i class="fas fa-envelope"></i>
+                                    </div>
+                                    <div class="method-content">
+                                        <h4>Email Notification</h4>
+                                        <p>We send tracking information automatically via email once your order ships.</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="method-card">
+                                    <div class="method-icon">
+                                        <i class="fas fa-user"></i>
+                                    </div>
+                                    <div class="method-content">
+                                        <h4>Account Dashboard</h4>
+                                        <p>Log into your account to view order status and tracking information.</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="method-card">
+                                    <div class="method-icon">
+                                        <i class="fas fa-question-circle"></i>
+                                    </div>
+                                    <div class="method-content">
+                                        <h4>Contact Support</h4>
+                                        <p>Our customer service team can provide tracking updates if needed.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="tracking-faq">
+                                <h3>Tracking FAQ</h3>
+                                
+                                <div class="faq-item">
+                                    <div class="faq-question">
+                                        <h4>Why isn't my tracking number working?</h4>
+                                        <i class="fas fa-chevron-down"></i>
+                                    </div>
+                                    <div class="faq-answer">
+                                        <p>Tracking numbers may take 24-48 hours to activate in the carrier's system. If it's been longer, please contact us.</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="faq-item">
+                                    <div class="faq-question">
+                                        <h4>My package shows delivered but I didn't receive it</h4>
+                                        <i class="fas fa-chevron-down"></i>
+                                    </div>
+                                    <div class="faq-answer">
+                                        <p>Check with neighbors, building management, or safe delivery spots. Contact us within 48 hours if not found.</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="faq-item">
+                                    <div class="faq-question">
+                                        <h4>Can I change the delivery address after shipping?</h4>
+                                        <i class="fas fa-chevron-down"></i>
+                                    </div>
+                                    <div class="faq-answer">
+                                        <p>Address changes are difficult once shipped. Contact us immediately, and we'll attempt to reroute with the carrier.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="policy-section" id="costs">
+                        <h2>Shipping Costs</h2>
+                        
+                        <div class="costs-grid">
+                            <div class="cost-card">
+                                <h3>Domestic Shipping</h3>
+                                <div class="cost-amount">$5.99</div>
+                                <p>Standard shipping for orders under $50</p>
+                                <div class="cost-feature">
+                                    <i class="fas fa-check"></i>
+                                    <span>FREE on orders over $50</span>
+                                </div>
+                            </div>
+                            
+                            <div class="cost-card">
+                                <h3>Express Shipping</h3>
+                                <div class="cost-amount">$12.99</div>
+                                <p>1-2 business day delivery</p>
+                                <div class="cost-feature">
+                                    <i class="fas fa-check"></i>
+                                    <span>Available nationwide</span>
+                                </div>
+                            </div>
+                            
+                            <div class="cost-card">
+                                <h3>Next Day</h3>
+                                <div class="cost-amount">$24.99</div>
+                                <p>Next business day delivery</p>
+                                <div class="cost-feature">
+                                    <i class="fas fa-check"></i>
+                                    <span>Order by 12 PM EST</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="free-shipping-info">
+                            <h3>Free Shipping Program</h3>
+                            <div class="benefits-list">
+                                <div class="benefit-item">
+                                    <i class="fas fa-shipping-fast"></i>
+                                    <div>
+                                        <h4>Free Standard Shipping</h4>
+                                        <p>On all orders over $50</p>
+                                    </div>
+                                </div>
+                                <div class="benefit-item">
+                                    <i class="fas fa-crown"></i>
+                                    <div>
+                                        <h4>VIP Members</h4>
+                                        <p>Free express shipping on all orders for VIP members</p>
+                                    </div>
+                                </div>
+                                <div class="benefit-item">
+                                    <i class="fas fa-gift"></i>
+                                    <div>
+                                        <h4>Seasonal Promotions</h4>
+                                        <p>Watch for free shipping promotions during holidays</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="policy-section" id="restrictions">
+                        <h2>Shipping Restrictions</h2>
+                        
+                        <div class="restrictions-grid">
+                            <div class="restriction-card">
+                                <div class="restriction-icon">
+                                    <i class="fas fa-ban"></i>
+                                </div>
+                                <h3>Restricted Items</h3>
+                                <ul>
+                                    <li>Hazardous materials</li>
+                                    <li>Perishable goods</li>
+                                    <li>Illegal substances</li>
+                                    <li>Weapons or ammunition</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="restriction-card">
+                                <div class="restriction-icon">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                </div>
+                                <h3>Location Restrictions</h3>
+                                <ul>
+                                    <li>PO Boxes (some services)</li>
+                                    <li>Military addresses (APO/FPO)</li>
+                                    <li>Remote areas</li>
+                                    <li>International embargoed countries</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="restriction-card">
+                                <div class="restriction-icon">
+                                    <i class="fas fa-calendar-times"></i>
+                                </div>
+                                <h3>Time Restrictions</h3>
+                                <ul>
+                                    <li>Weekend delivery limitations</li>
+                                    <li>Holiday delivery delays</li>
+                                    <li>Weather-related restrictions</li>
+                                    <li>Carrier service interruptions</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="policy-section" id="issues">
+                        <h2>Delivery Issues & Support</h2>
+                        
+                        <div class="issues-grid">
+                            <div class="issue-card">
+                                <h3>Lost Packages</h3>
+                                <p>If your tracking shows no movement for more than 5 business days, contact us immediately.</p>
+                                <ul>
+                                    <li>We'll initiate a trace with the carrier</li>
+                                    <li>If lost, we'll reship or refund</li>
+                                    <li>48-hour investigation period</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="issue-card">
+                                <h3>Damaged Items</h3>
+                                <p>If your items arrive damaged, please contact us within 7 days of delivery.</p>
+                                <ul>
+                                    <li>Photos of damage required</li>
+                                    <li>We'll send replacements immediately</li>
+                                    <li>Return shipping provided</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="issue-card">
+                                <h3>Delivery Delays</h3>
+                                <p>For packages significantly past their estimated delivery date.</p>
+                                <ul>
+                                    <li>Check tracking for updates first</li>
+                                    <li>Contact us for assistance</li>
+                                    <li>We'll work with carrier for resolution</li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <div class="support-contact">
+                            <h3>Need Help?</h3>
+                            <div class="contact-options">
+                                <div class="contact-option">
+                                    <i class="fas fa-envelope"></i>
+                                    <div>
+                                        <h4>Email Support</h4>
+                                        <p>shipping@fashionfusion.com</p>
+                                        <small>Response within 4 hours</small>
+                                    </div>
+                                </div>
+                                <div class="contact-option">
+                                    <i class="fas fa-phone"></i>
+                                    <div>
+                                        <h4>Phone Support</h4>
+                                        <p>+1 (555) 123-SHIP</p>
+                                        <small>Mon-Fri 9AM-6PM EST</small>
+                                    </div>
+                                </div>
+                                <div class="contact-option">
+                                    <i class="fas fa-comments"></i>
+                                    <div>
+                                        <h4>Live Chat</h4>
+                                        <p>Available on website</p>
+                                        <small>24/7 automated support</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </main>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <a href="index.html" class="logo">Fashion<span>Fusion</span></a>
+                    </div>
+                    <p>Your premier destination for trendy and affordable fashion. Quality meets style in every piece we offer.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="shop.html">Shop</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Customer Service</h3>
+                    <ul>
+                        <li><a href="shipping.html" class="active">Shipping Policy</a></li>
+                        <li><a href="returns.html">Returns & Refunds</a></li>
+                        <li><a href="size-guide.html">Size Guide</a></li>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <div class="contact-info">
+                        <p><i class="fas fa-map-marker-alt"></i> 123 Fashion St, Style City</p>
+                        <p><i class="fas fa-phone"></i> +1 (555) 123-4567</p>
+                        <p><i class="fas fa-envelope"></i> info@fashionfusion.com</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 FashionFusion. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    
+    <script src="js/shipping.js"></script>
+</body>
+</html>

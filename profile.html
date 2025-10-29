@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Profile - FashionFusion</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/animations.css">
+    <link rel="stylesheet" href="styles/responsive.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <a href="index.html" class="logo">Fashion<span>Fusion</span></a>
+                </div>
+                
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="about.html" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="shop.html" class="nav-link">Shop <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="shop.html?category=men">Men's Collection</a></li>
+                            <li><a href="shop.html?category=women">Women's Collection</a></li>
+                            <li><a href="shop.html?category=kids">Kids' Collection</a></li>
+                            <li><a href="shop.html?category=accessories">Accessories</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link">Contact</a>
+                    </li>
+                    <li class="nav-item auth-item">
+                        <a href="profile.html" class="nav-link login-btn active" id="loginBtn">
+                            <i class="fas fa-user-circle"></i> My Account
+                        </a>
+                        <div class="user-menu" id="userMenu">
+                            <a href="profile.html" class="user-menu-item">
+                                <i class="fas fa-user-edit"></i> My Profile
+                            </a>
+                            <a href="profile.html?tab=orders" class="user-menu-item">
+                                <i class="fas fa-shopping-bag"></i> My Orders
+                            </a>
+                            <a href="#" class="user-menu-item" id="logoutBtn">
+                                <i class="fas fa-sign-out-alt"></i> Logout
+                            </a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a href="cart.html" class="nav-link cart-icon">
+                            <i class="fas fa-shopping-cart"></i>
+                            <span class="cart-count">0</span>
+                        </a>
+                    </li>
+                </ul>
+
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Profile Header -->
+    <section class="page-header">
+        <div class="container">
+            <div class="page-header-content animate-fade-in">
+                <h1>My Profile</h1>
+                <p>Manage your account information and track your orders</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Profile Content -->
+    <section class="profile-content">
+        <div class="container">
+            <div class="profile-layout">
+                <!-- Profile Sidebar -->
+                <aside class="profile-sidebar">
+                    <div class="profile-summary">
+                        <div class="profile-avatar">
+                            <img src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2080&q=80" alt="Profile" id="profileAvatar">
+                            <button class="avatar-edit" onclick="document.getElementById('avatarInput').click()">
+                                <i class="fas fa-camera"></i>
+                            </button>
+                            <input type="file" id="avatarInput" accept="image/*" style="display: none;">
+                        </div>
+                        <h3 id="userName">John Doe</h3>
+                        <p id="userEmail">john.doe@example.com</p>
+                        <div class="profile-stats">
+                            <div class="stat">
+                                <strong id="ordersCount">0</strong>
+                                <span>Orders</span>
+                            </div>
+                            <div class="stat">
+                                <strong id="wishlistCount">0</strong>
+                                <span>Wishlist</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <nav class="profile-nav">
+                        <a href="#personal" class="nav-item active" data-tab="personal">
+                            <i class="fas fa-user"></i>
+                            Personal Information
+                        </a>
+                        <a href="#orders" class="nav-item" data-tab="orders">
+                            <i class="fas fa-shopping-bag"></i>
+                            My Orders
+                            <span class="nav-badge" id="ordersBadge">0</span>
+                        </a>
+                        <a href="#addresses" class="nav-item" data-tab="addresses">
+                            <i class="fas fa-map-marker-alt"></i>
+                            Address Book
+                        </a>
+                        <a href="#wishlist" class="nav-item" data-tab="wishlist">
+                            <i class="fas fa-heart"></i>
+                            My Wishlist
+                            <span class="nav-badge" id="wishlistBadge">0</span>
+                        </a>
+                        <a href="#settings" class="nav-item" data-tab="settings">
+                            <i class="fas fa-cog"></i>
+                            Account Settings
+                        </a>
+                    </nav>
+                </aside>
+
+                <!-- Profile Main Content -->
+                <main class="profile-main">
+                    <!-- Personal Information Tab -->
+                    <div class="profile-tab active" id="personalTab">
+                        <div class="tab-header">
+                            <h2>Personal Information</h2>
+                            <p>Update your personal details and preferences</p>
+                        </div>
+                        
+                        <form class="profile-form" id="personalForm">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="firstName">First Name *</label>
+                                    <input type="text" id="firstName" name="firstName" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="lastName">Last Name *</label>
+                                    <input type="text" id="lastName" name="lastName" required>
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="email">Email Address *</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="phone">Phone Number</label>
+                                <input type="tel" id="phone" name="phone">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="birthdate">Date of Birth</label>
+                                <input type="date" id="birthdate" name="birthdate">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label>Gender</label>
+                                <div class="radio-group">
+                                    <label class="radio-option">
+                                        <input type="radio" name="gender" value="male">
+                                        <span>Male</span>
+                                    </label>
+                                    <label class="radio-option">
+                                        <input type="radio" name="gender" value="female">
+                                        <span>Female</span>
+                                    </label>
+                                    <label class="radio-option">
+                                        <input type="radio" name="gender" value="other">
+                                        <span>Other</span>
+                                    </label>
+                                </div>
+                            </div>
+                            
+                            <div class="form-actions">
+                                <button type="submit" class="btn btn-primary">Save Changes</button>
+                                <button type="button" class="btn btn-secondary" onclick="profileManager.resetForm()">Reset</button>
+                            </div>
+                        </form>
+                    </div>
+
+                    <!-- Orders Tab -->
+                    <div class="profile-tab" id="ordersTab">
+                        <div class="tab-header">
+                            <h2>My Orders</h2>
+                            <p>Track and manage your orders</p>
+                        </div>
+                        
+                        <div class="orders-container" id="ordersContainer">
+                            <!-- Orders will be loaded dynamically -->
+                            <div class="empty-state">
+                                <i class="fas fa-shopping-bag"></i>
+                                <h3>No orders yet</h3>
+                                <p>When you place orders, they will appear here</p>
+                                <a href="shop.html" class="btn btn-primary">Start Shopping</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Addresses Tab -->
+                    <div class="profile-tab" id="addressesTab">
+                        <div class="tab-header">
+                            <h2>Address Book</h2>
+                            <p>Manage your shipping addresses</p>
+                        </div>
+                        
+                        <div class="addresses-container">
+                            <div class="addresses-grid" id="addressesGrid">
+                                <!-- Addresses will be loaded dynamically -->
+                            </div>
+                            
+                            <button class="btn btn-primary" onclick="profileManager.showAddressForm()">
+                                <i class="fas fa-plus"></i> Add New Address
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Wishlist Tab -->
+                    <div class="profile-tab" id="wishlistTab">
+                        <div class="tab-header">
+                            <h2>My Wishlist</h2>
+                            <p>Your saved items</p>
+                        </div>
+                        
+                        <div class="wishlist-container" id="wishlistContainer">
+                            <!-- Wishlist items will be loaded dynamically -->
+                            <div class="empty-state">
+                                <i class="fas fa-heart"></i>
+                                <h3>Your wishlist is empty</h3>
+                                <p>Save items you love to buy them later</p>
+                                <a href="shop.html" class="btn btn-primary">Explore Products</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Settings Tab -->
+                    <div class="profile-tab" id="settingsTab">
+                        <div class="tab-header">
+                            <h2>Account Settings</h2>
+                            <p>Manage your account preferences and security</p>
+                        </div>
+                        
+                        <div class="settings-sections">
+                            <div class="settings-section">
+                                <h3>Password & Security</h3>
+                                <form class="settings-form" id="passwordForm">
+                                    <div class="form-group">
+                                        <label for="currentPassword">Current Password</label>
+                                        <input type="password" id="currentPassword" name="currentPassword">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="newPassword">New Password</label>
+                                        <input type="password" id="newPassword" name="newPassword">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="confirmPassword">Confirm New Password</label>
+                                        <input type="password" id="confirmPassword" name="confirmPassword">
+                                    </div>
+                                    <button type="submit" class="btn btn-primary">Update Password</button>
+                                </form>
+                            </div>
+                            
+                            <div class="settings-section">
+                                <h3>Notification Preferences</h3>
+                                <div class="notification-settings">
+                                    <label class="checkbox-option">
+                                        <input type="checkbox" name="emailNotifications" checked>
+                                        <span>Email notifications</span>
+                                    </label>
+                                    <label class="checkbox-option">
+                                        <input type="checkbox" name="smsNotifications">
+                                        <span>SMS notifications</span>
+                                    </label>
+                                    <label class="checkbox-option">
+                                        <input type="checkbox" name="promotionalEmails" checked>
+                                        <span>Promotional emails</span>
+                                    </label>
+                                </div>
+                            </div>
+                            
+                            <div class="settings-section danger-zone">
+                                <h3>Danger Zone</h3>
+                                <p>Once you delete your account, there is no going back. Please be certain.</p>
+                                <button class="btn btn-danger" onclick="profileManager.showDeleteConfirmation()">
+                                    <i class="fas fa-trash"></i> Delete Account
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </main>
+            </div>
+        </div>
+    </section>
+
+    <!-- Address Modal -->
+    <div class="modal" id="addressModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 id="addressModalTitle">Add New Address</h3>
+                <button class="modal-close" onclick="profileManager.hideAddressForm()">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <form class="address-form" id="addressForm">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="addressLabel">Address Label *</label>
+                        <input type="text" id="addressLabel" name="label" placeholder="Home, Work, etc." required>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="streetAddress">Street Address *</label>
+                    <input type="text" id="streetAddress" name="street" required>
+                </div>
+                
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="city">City *</label>
+                        <input type="text" id="city" name="city" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="state">State *</label>
+                        <input type="text" id="state" name="state" required>
+                    </div>
+                </div>
+                
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="zipCode">ZIP Code *</label>
+                        <input type="text" id="zipCode" name="zipCode" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="country">Country *</label>
+                        <select id="country" name="country" required>
+                            <option value="">Select Country</option>
+                            <option value="US">United States</option>
+                            <option value="CA">Canada</option>
+                            <option value="UK">United Kingdom</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label class="checkbox-option">
+                        <input type="checkbox" name="isDefault">
+                        <span>Set as default shipping address</span>
+                    </label>
+                </div>
+                
+                <div class="form-actions">
+                    <button type="submit" class="btn btn-primary">Save Address</button>
+                    <button type="button" class="btn btn-secondary" onclick="profileManager.hideAddressForm()">Cancel</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <a href="index.html" class="logo">Fashion<span>Fusion</span></a>
+                    </div>
+                    <p>Your premier destination for trendy and affordable fashion. Quality meets style in every piece we offer.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="shop.html">Shop</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Customer Service</h3>
+                    <ul>
+                       <li><a href="shipping.html">Shipping Policy</a></li>
+                        <li><a href="returns.html">Returns & Refunds</a></li>
+                        <li><a href="size-guide.html">Size Guide</a></li>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <div class="contact-info">
+                        <p><i class="fas fa-map-marker-alt"></i> 123 Fashion St, Style City</p>
+                        <p><i class="fas fa-phone"></i> +1 (555) 123-4567</p>
+                        <p><i class="fas fa-envelope"></i> info@fashionfusion.com</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 FashionFusion. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script src="js/profile.js"></script>
+</body>
+</html>

@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Returns & Refunds - FashionFusion</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/animations.css">
+    <link rel="stylesheet" href="styles/responsive.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <a href="index.html" class="logo">Fashion<span>Fusion</span></a>
+                </div>
+                
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="about.html" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="shop.html" class="nav-link">Shop <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="shop.html?category=men">Men's Collection</a></li>
+                            <li><a href="shop.html?category=women">Women's Collection</a></li>
+                            <li><a href="shop.html?category=kids">Kids' Collection</a></li>
+                            <li><a href="shop.html?category=accessories">Accessories</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link">Contact</a>
+                    </li>
+                    <li class="nav-item auth-item">
+                        <a href="login.html" class="nav-link login-btn" id="loginBtn">
+                            <i class="fas fa-user"></i> Login
+                        </a>
+                        <div class="user-menu" id="userMenu">
+                            <a href="profile.html" class="user-menu-item">
+                                <i class="fas fa-user-edit"></i> My Profile
+                            </a>
+                            <a href="profile.html?tab=orders" class="user-menu-item">
+                                <i class="fas fa-shopping-bag"></i> My Orders
+                            </a>
+                            <a href="#" class="user-menu-item" id="logoutBtn">
+                                <i class="fas fa-sign-out-alt"></i> Logout
+                            </a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a href="cart.html" class="nav-link cart-icon">
+                            <i class="fas fa-shopping-cart"></i>
+                            <span class="cart-count">0</span>
+                        </a>
+                    </li>
+                </ul>
+
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Returns Header -->
+    <section class="page-header">
+        <div class="container">
+            <div class="page-header-content animate-fade-in">
+                <h1>Returns & Refunds</h1>
+                <p>Hassle-free returns within 30 days</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Returns Content -->
+    <section class="policy-content">
+        <div class="container">
+            <div class="policy-layout">
+                <!-- Table of Contents -->
+                <aside class="policy-sidebar">
+                    <nav class="policy-nav">
+                        <h3>Quick Navigation</h3>
+                        <ul>
+                            <li><a href="#overview" class="nav-link active">Policy Overview</a></li>
+                            <li><a href="#eligibility" class="nav-link">Return Eligibility</a></li>
+                            <li><a href="#process" class="nav-link">Return Process</a></li>
+                            <li><a href="#refunds" class="nav-link">Refund Information</a></li>
+                            <li><a href="#exchanges" class="nav-link">Exchanges</a></li>
+                            <li><a href="#exceptions" class="nav-link">Exceptions</a></li>
+                            <li><a href="#timeline" class="nav-link">Return Timeline</a></li>
+                            <li><a href="#contact" class="nav-link">Contact Support</a></li>
+                        </ul>
+                    </nav>
+                </aside>
+
+                <!-- Main Content -->
+                <main class="policy-main">
+                    <div class="policy-section active" id="overview">
+                        <h2>Returns Policy Overview</h2>
+                        <p>We want you to be completely satisfied with your purchase. If you're not happy with your order, we offer a straightforward returns process.</p>
+                        
+                        <div class="policy-highlights">
+                            <div class="highlight-card">
+                                <div class="highlight-icon">
+                                    <i class="fas fa-calendar-alt"></i>
+                                </div>
+                                <div class="highlight-content">
+                                    <h3>30-Day Returns</h3>
+                                    <p>Return most items within 30 days of delivery</p>
+                                </div>
+                            </div>
+                            
+                            <div class="highlight-card">
+                                <div class="highlight-icon">
+                                    <i class="fas fa-sync-alt"></i>
+                                </div>
+                                <div class="highlight-content">
+                                    <h3>Free Returns</h3>
+                                    <p>Free return shipping for US customers</p>
+                                </div>
+                            </div>
+                            
+                            <div class="highlight-card">
+                                <div class="highlight-icon">
+                                    <i class="fas fa-money-bill-wave"></i>
+                                </div>
+                                <div class="highlight-content">
+                                    <h3>Full Refunds</h3>
+                                    <p>Receive full refunds on eligible returns</p>
+                                </div>
+                            </div>
+                            
+                            <div class="highlight-card">
+                                <div class="highlight-icon">
+                                    <i class="fas fa-truck"></i>
+                                </div>
+                                <div class="highlight-content">
+                                    <h3>Easy Process</h3>
+                                    <p>Simple online returns process</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="quick-return">
+                            <h3>Start a Return</h3>
+                            <p>Ready to return an item? Start the process quickly and easily.</p>
+                            <div class="return-actions">
+                                <a href="contact.html" class="btn btn-primary">
+                                    <i class="fas fa-undo-alt"></i> Start Return
+                                </a>
+                                <a href="contact.html" class="btn btn-secondary">
+                                    <i class="fas fa-question-circle"></i> Need Help?
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="policy-section" id="eligibility">
+                        <h2>Return Eligibility</h2>
+                        
+                        <div class="eligibility-grid">
+                            <div class="eligibility-card eligible">
+                                <div class="eligibility-header">
+                                    <i class="fas fa-check-circle"></i>
+                                    <h3>Eligible for Return</h3>
+                                </div>
+                                <ul>
+                                    <li>Items in original condition</li>
+                                    <li>With original tags attached</li>
+                                    <li>Unworn and undamaged</li>
+                                    <li>In original packaging</li>
+                                    <li>Within 30 days of delivery</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="eligibility-card not-eligible">
+                                <div class="eligibility-header">
+                                    <i class="fas fa-times-circle"></i>
+                                    <h3>Not Eligible for Return</h3>
+                                </div>
+                                <ul>
+                                    <li>Final sale items</li>
+                                    <li>Worn or damaged items</li>
+                                    <li>Items without original tags</li>
+                                    <li>Personalized/custom items</li>
+                                    <li>Underwear & swimwear*</li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <div class="special-notes">
+                            <h3>Special Notes</h3>
+                            <div class="note-card">
+                                <h4>Defective Items</h4>
+                                <p>If you receive a defective item, contact us within 7 days of delivery for an immediate replacement or refund.</p>
+                            </div>
+                            <div class="note-card">
+                                <h4>Wrong Items Received</h4>
+                                <p>If you receive the wrong item, we'll provide a prepaid return label and expedite the correct item to you.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="policy-section" id="process">
+                        <h2>Return Process</h2>
+                        
+                        <div class="process-steps">
+                            <div class="process-step">
+                                <div class="step-number">1</div>
+                                <div class="step-content">
+                                    <h3>Initiate Return</h3>
+                                    <p>Log into your account and go to "My Orders" to start the return process, or contact our customer service team.</p>
+                                    <ul>
+                                        <li>Provide reason for return</li>
+                                        <li>Select return method</li>
+                                        <li>Print return label (if applicable)</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            
+                            <div class="process-step">
+                                <div class="step-number">2</div>
+                                <div class="step-content">
+                                    <h3>Prepare Package</h3>
+                                    <p>Carefully package your items following these guidelines:</p>
+                                    <ul>
+                                        <li>Include original tags</li>
+                                        <li>Use original packaging if possible</li>
+                                        <li>Include return form</li>
+                                        <li>Securely seal the package</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            
+                            <div class="process-step">
+                                <div class="step-number">3</div>
+                                <div class="step-content">
+                                    <h3>Ship Return</h3>
+                                    <p>Drop off your package at any authorized shipping location:</p>
+                                    <ul>
+                                        <li>USPS locations</li>
+                                        <li>UPS stores</li>
+                                        <li>FedEx offices</li>
+                                        <li>Keep your tracking number</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            
+                            <div class="process-step">
+                                <div class="step-number">4</div>
+                                <div class="step-content">
+                                    <h3>Receive Refund</h3>
+                                    <p>Once we receive and process your return:</p>
+                                    <ul>
+                                        <li>Refund processed within 5 business days</li>
+                                        <li>Notification email sent</li>
+                                        <li>Refund appears in 3-10 business days</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="return-methods">
+                            <h3>Return Methods</h3>
+                            <div class="methods-grid">
+                                <div class="method-card">
+                                    <div class="method-icon">
+                                        <i class="fas fa-print"></i>
+                                    </div>
+                                    <h4>Prepaid Label</h4>
+                                    <p>Print our prepaid return label and drop off at any carrier location.</p>
+                                    <div class="method-cost">FREE</div>
+                                </div>
+                                
+                                <div class="method-card">
+                                    <div class="method-icon">
+                                        <i class="fas fa-store"></i>
+                                    </div>
+                                    <h4>In-Store Return</h4>
+                                    <p>Return items to any FashionFusion retail store for immediate processing.</p>
+                                    <div class="method-cost">FREE</div>
+                                </div>
+                                
+                                <div class="method-card">
+                                    <div class="method-icon">
+                                        <i class="fas fa-box"></i>
+                                    </div>
+                                    <h4>Self-Ship</h4>
+                                    <p>Ship using your preferred carrier (shipping costs not reimbursed).</p>
+                                    <div class="method-cost">Varies</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="policy-section" id="refunds">
+                        <h2>Refund Information</h2>
+                        
+                        <div class="refund-types">
+                            <div class="refund-card">
+                                <h3>Standard Refunds</h3>
+                                <div class="refund-amount">Full Amount</div>
+                                <p>Refund of the item price and applicable taxes</p>
+                                <ul>
+                                    <li>Original shipping costs not refunded</li>
+                                    <li>Processing time: 5-7 business days</li>
+                                    <li>Issued to original payment method</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="refund-card">
+                                <h3>Store Credit</h3>
+                                <div class="refund-amount">110% Value</div>
+                                <p>Get bonus credit when choosing store credit</p>
+                                <ul>
+                                    <li>10% bonus on refund amount</li>
+                                    <li>Instant processing</li>
+                                    <li>No expiration date</li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <div class="refund-timeline">
+                            <h3>Refund Timeline</h3>
+                            <table class="policy-table">
+                                <thead>
+                                    <tr>
+                                        <th>Stage</th>
+                                        <th>Timeframe</th>
+                                        <th>Notes</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Return Received</td>
+                                        <td>1-2 business days</td>
+                                        <td>We process returns upon arrival at our facility</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Quality Check</td>
+                                        <td>1 business day</td>
+                                        <td>Items inspected for compliance with return policy</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Refund Initiated</td>
+                                        <td>1 business day</td>
+                                        <td>Refund processed in our system</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Bank Processing</td>
+                                        <td>3-10 business days</td>
+                                        <td>Time depends on your bank/credit card company</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        
+                        <div class="refund-notice">
+                            <h3>Important Refund Notes</h3>
+                            <div class="notice-list">
+                                <div class="notice-item">
+                                    <i class="fas fa-info-circle"></i>
+                                    <p>Sale items are refunded at the purchase price</p>
+                                </div>
+                                <div class="notice-item">
+                                    <i class="fas fa-info-circle"></i>
+                                    <p>Gift cards are non-refundable</p>
+                                </div>
+                                <div class="notice-item">
+                                    <i class="fas fa-info-circle"></i>
+                                    <p>International returns may have deducted shipping costs</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="policy-section" id="exchanges">
+                        <h2>Exchanges</h2>
+                        
+                        <div class="exchange-options">
+                            <div class="exchange-card">
+                                <h3>Size/Color Exchange</h3>
+                                <p>Need a different size or color? We make exchanges easy.</p>
+                                <ul>
+                                    <li>Free exchange shipping</li>
+                                    <li>Priority processing</li>
+                                    <li>Subject to availability</li>
+                                </ul>
+                                <div class="exchange-process">
+                                    <h4>Process:</h4>
+                                    <ol>
+                                        <li>Initiate exchange online</li>
+                                        <li>Return original item</li>
+                                        <li>New item ships immediately*</li>
+                                    </ol>
+                                    <small>*Once return tracking shows scanned</small>
+                                </div>
+                            </div>
+                            
+                            <div class="exchange-card">
+                                <h3>Store Credit Exchange</h3>
+                                <p>Can't find what you want? Get store credit for future purchases.</p>
+                                <ul>
+                                    <li>110% value in store credit</li>
+                                    <li>No expiration date</li>
+                                    <li>Use anytime online or in-store</li>
+                                </ul>
+                                <div class="exchange-benefits">
+                                    <h4>Benefits:</h4>
+                                    <ul>
+                                        <li>Extra 10% credit bonus</li>
+                                        <li>Flexible spending</li>
+                                        <li>Perfect for gifts</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="policy-section" id="exceptions">
+                        <h2>Policy Exceptions</h2>
+                        
+                        <div class="exceptions-grid">
+                            <div class="exception-card">
+                                <h3>Final Sale Items</h3>
+                                <div class="exception-status">No Returns</div>
+                                <p>These items are marked as final sale and cannot be returned:</p>
+                                <ul>
+                                    <li>Clearance items</li>
+                                    <li>Special promotion items</li>
+                                    <li>Items marked "Final Sale"</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="exception-card">
+                                <h3>Intimate Apparel</h3>
+                                <div class="exception-status">Limited Returns</div>
+                                <p>For health and safety reasons, these items have restrictions:</p>
+                                <ul>
+                                    <li>Underwear (unworn with hygiene seal)</li>
+                                    <li>Swimwear (with protective liner intact)</li>
+                                    <li>Hosiery (unopened packaging)</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="exception-card">
+                                <h3>Custom Items</h3>
+                                <div class="exception-status">No Returns</div>
+                                <p>Personalized or custom-made items cannot be returned:</p>
+                                <ul>
+                                    <li>Monogrammed clothing</li>
+                                    <li>Custom-sized items</li>
+                                    <li>Made-to-order pieces</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="exception-card">
+                                <h3>International Returns</h3>
+                                <div class="exception-status">Special Conditions</div>
+                                <p>Additional considerations for international returns:</p>
+                                <ul>
+                                    <li>Return shipping not covered</li>
+                                    <li>Customs duties not refundable</li>
+                                    <li>Longer processing times</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="policy-section" id="timeline">
+                        <h2>Return Timeline & Deadlines</h2>
+                        
+                        <div class="timeline-visual">
+                            <div class="timeline-item">
+                                <div class="timeline-date">Day 1</div>
+                                <div class="timeline-content">
+                                    <h4>Delivery Date</h4>
+                                    <p>Your 30-day return window begins</p>
+                                </div>
+                            </div>
+                            
+                            <div class="timeline-item">
+                                <div class="timeline-date">Day 15</div>
+                                <div class="timeline-content">
+                                    <h4>Midpoint</h4>
+                                    <p>Recommended to initiate returns by this date</p>
+                                </div>
+                            </div>
+                            
+                            <div class="timeline-item">
+                                <div class="timeline-date">Day 25</div>
+                                <div class="timeline-content">
+                                    <h4>Final Week</h4>
+                                    <p>Last week to initiate returns online</p>
+                                </div>
+                            </div>
+                            
+                            <div class="timeline-item">
+                                <div class="timeline-date">Day 30</div>
+                                <div class="timeline-content">
+                                    <h4>Deadline</h4>
+                                    <p>Final day to postmark returns</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="deadline-notes">
+                            <h3>Important Deadline Information</h3>
+                            <div class="deadline-card">
+                                <h4>Online Returns</h4>
+                                <p>Must be initiated by 11:59 PM EST on day 30</p>
+                            </div>
+                            <div class="deadline-card">
+                                <h4>Mail Returns</h4>
+                                <p>Must be postmarked by day 30 (carrier date)</p>
+                            </div>
+                            <div class="deadline-card">
+                                <h4>In-Store Returns</h4>
+                                <p>Must be completed by store closing on day 30</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="policy-section" id="contact">
+                        <h2>Returns Support</h2>
+                        
+                        <div class="support-options">
+                            <div class="support-card">
+                                <div class="support-icon">
+                                    <i class="fas fa-headset"></i>
+                                </div>
+                                <h3>Phone Support</h3>
+                                <p>Speak directly with our returns specialists</p>
+                                <div class="support-contact">
+                                    <strong>+1 (555) 123-RETURN</strong>
+                                    <small>Mon-Fri 8AM-8PM EST</small>
+                                </div>
+                            </div>
+                            
+                            <div class="support-card">
+                                <div class="support-icon">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <h3>Email Support</h3>
+                                <p>Get help via email with detailed responses</p>
+                                <div class="support-contact">
+                                    <strong>returns@fashionfusion.com</strong>
+                                    <small>Response within 4 hours</small>
+                                </div>
+                            </div>
+                            
+                            <div class="support-card">
+                                <div class="support-icon">
+                                    <i class="fas fa-comments"></i>
+                                </div>
+                                <h3>Live Chat</h3>
+                                <p>Instant help through our website chat</p>
+                                <div class="support-contact">
+                                    <strong>Available 24/7</strong>
+                                    <small>Automated & agent support</small>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="faq-section">
+                            <h3>Returns FAQ</h3>
+                            
+                            <div class="faq-item">
+                                <div class="faq-question">
+                                    <h4>How long does it take to receive my refund?</h4>
+                                    <i class="fas fa-chevron-down"></i>
+                                </div>
+                                <div class="faq-answer">
+                                    <p>Refunds are typically processed within 5-7 business days after we receive your return. It may take an additional 3-10 business days for the refund to appear on your account, depending on your bank or credit card company.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="faq-item">
+                                <div class="faq-question">
+                                    <h4>What if I received a damaged or incorrect item?</h4>
+                                    <i class="fas fa-chevron-down"></i>
+                                </div>
+                                <div class="faq-answer">
+                                    <p>Contact us immediately at returns@fashionfusion.com or call +1 (555) 123-RETURN. We'll arrange for a prepaid return label and expedite the correct item to you at no additional cost.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="faq-item">
+                                <div class="faq-question">
+                                    <h4>Can I return an item I purchased on sale?</h4>
+                                    <i class="fas fa-chevron-down"></i>
+                                </div>
+                                <div class="faq-answer">
+                                    <p>Yes, sale items can be returned within 30 days unless marked "Final Sale." Sale items are refunded at the purchase price paid.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </main>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <a href="index.html" class="logo">Fashion<span>Fusion</span></a>
+                    </div>
+                    <p>Your premier destination for trendy and affordable fashion. Quality meets style in every piece we offer.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="shop.html">Shop</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Customer Service</h3>
+                    <ul>
+                        <li><a href="shipping.html">Shipping Policy</a></li>
+                        <li><a href="returns.html" class="active">Returns & Refunds</a></li>
+                        <li><a href="size-guide.html">Size Guide</a></li>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <div class="contact-info">
+                        <p><i class="fas fa-map-marker-alt"></i> 123 Fashion St, Style City</p>
+                        <p><i class="fas fa-phone"></i> +1 (555) 123-4567</p>
+                        <p><i class="fas fa-envelope"></i> info@fashionfusion.com</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 FashionFusion. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script src="js/policy.js"></script>
+</body>
+</html>
